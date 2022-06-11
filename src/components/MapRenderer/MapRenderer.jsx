@@ -1,12 +1,7 @@
-import {useEffect, useMemo, useRef, useState} from 'react';
-// import dynamic from "next/dynamic";
-// import "leaflet/dist/leaflet.css";
-// import MarkerCluster from "../MarkerCluster";
-// import MarkerClusterGroup from "react-leaflet-markercluster";
+import {useEffect, useMemo, useState} from 'react';
 import { Map, Marker } from "pigeon-maps";
 import { osm } from 'pigeon-maps/providers'
 import useGeolocationData from "../../hooks/useGeolocationData/useGeolocationData";
-import useSupercluster from "use-supercluster";
 
 const MapRenderer = () => {
 	const [zoom, setZoom] = useState(3);
@@ -29,17 +24,7 @@ const MapRenderer = () => {
 		[-80, 200],
 		[90, -170],
 	]
-	const coordinates = [
-		[-50,80],
-		[-50,82],
-		[-50,84]
-	]
-	const { clusters, supercluster } = useSupercluster({
-		points: coordinates,
-		bounds,
-		zoom,
-		options: { radius: 75, maxZoom: 20 }
-	})
+
 	const mapProvider = useMemo(() =>(x,y,z,dpr) => {
 		const api_key = `?api_key=${process.env.STADIA_API_KEY}`;
 		return `https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/${z}/${x}/${y}${dpr >= 2 ? '@2x' : ''}.png${process.env.DEVELOPMENT_MODE ? "" :api_key}`
