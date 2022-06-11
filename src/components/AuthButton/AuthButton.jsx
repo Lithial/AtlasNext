@@ -18,6 +18,7 @@ const AuthButton = () => {
 	if (!user) {
 		return (
 			<div className={"header-bar__auth"}>
+				{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 				<a className={"header-bar__auth-button"} href="/api/auth/login">Login</a>
 			</div>
 		)
@@ -30,6 +31,7 @@ const AuthButton = () => {
 		<div ref={authMenu} className={"header-bar__auth-menu"}>
 			<button className={"header-bar__auth-menu-button"} onClick={() => console.log("Map")}>Map</button>
 			<button className={"header-bar__auth-menu-button"} onClick={() => console.log("Profile")}>Profile</button>
+			{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
 			<a className={"header-bar__auth-menu-button"} href="/api/auth/logout">Logout</a>
 		</div>
 	</div>
