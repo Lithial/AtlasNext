@@ -13,7 +13,7 @@ exports.story = (name) => `import ${name} from "./${name}";
 
 export default {
 \ttitle: "${name}",
-\tcomponent: ${name},
+\tcomponent: ${name}
 };
 
 const ${name}Template = (args) => <${name} {...args}/>;

@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+/.idea/modules.xml
+/.idea/next-atlas.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml

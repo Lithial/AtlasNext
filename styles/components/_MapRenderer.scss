@@ -1,0 +1,15 @@
+.map-container {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+
+}
+.map-box-container {
+  background: #AAD3DF;
+}
+.leaflet-div-icon {
+  border-radius: 50%;
+}
