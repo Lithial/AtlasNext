@@ -14,6 +14,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.10.1",
     "@auth0/nextjs-auth0": "^1.9.0",
+    "@prisma/client": "3.15.1",
     "leaflet": "^1.8.0",
     "next": "12.1.6",
     "pigeon-maps": "^0.21.0",
@@ -35,6 +36,7 @@
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "eslint-plugin-storybook": "^0.5.12",
+    "prisma": "^3.15.1",
     "sass": "^1.52.2",
     "storybook-addon-next": "^1.6.6",
     "storybook-addon-next-auth0": "^1.0.6"
